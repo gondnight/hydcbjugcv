@@ -2,7 +2,8 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 import os
-bot_token=os.getenv('TOKEN')
+load_dotenv()
+bot_token=os.getenv('TOKEN1')+os.getenV('TOKEN2')
 bot=discord.Client(command_prefix="g")
 
 @bot.command()
